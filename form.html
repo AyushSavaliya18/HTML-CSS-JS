@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <title>Ragistratoin Form</title>
+    <style>
+        fieldset {
+            width: 30%;
+            border-radius: 19px;
+        }
+
+        #btn {
+            margin-top: 15px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .s {
+            width: 35%;
+        }
+
+        optgroup {
+            color: black;
+        }
+
+        input {
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <title>Ragistratoin Form</title>
+
+        <h2> * Written fields are mendatory</h2>
+
+        <form action="Home.html" method="post">
+            <fieldset>
+                <legend>Ragistration Details</legend>
+
+                <label for="fname"> * First Name :</label>
+                <input type="text" class="s" placeholder="Enter name" required>
+                <br><br>
+
+                <label for="lname" class="s"> Last name :</label>
+                <input type="text" id="lname" class="s" name="lname" placeholder="enter last name">
+                <br><br>
+
+                <label for="email"> * Email :</label>
+                <input type="email" name="email" class="s" placeholder="Enter Email" required><br>
+                <small>(example@domain.com)</small>
+                <br><br>
+
+                <label for="phno"> * Phone No.</label>
+                <input type="number" name="phno" class="s" placeholder="enter number " maxlength="10" required
+                    minlength="10"><br><br>
+
+                <label for="gender"> * Gender:</label>
+
+                <input type="radio" name="gender" value="male" id="male" checked>
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" value="Female" id="Female">
+                <label for="Female">Female</label>
+
+                <input type="radio" name="gender" value="other" id="other">
+                <label for="other">Other</label><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" required name="dob"><br><br>
+
+                <label for="address">Address:</label>
+                <textarea name="address" placeholder="Enter Address here"></textarea><br><br>
+
+                <label for="state">state:</label>
+                <select name="state">
+                    <option selected> Choose state</option>
+                    <option value="Gujrat">Gujrat</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Delhi"> Delhi </option>
+                    <option value="Bangalore"> Bangalore </option>
+                    <option value="Hyderabad"> Hyderabad </option>
+                    <option value="Mumbai"> Mumbai </option>
+                </select><br><br>
+
+
+
+                <label for="course">Course</label>
+                <select name="course">
+                    <option selected>Select Course</option>
+                    <optgroup label="BCA"></optgroup>
+                    <option value="IT">Information Technology</option>
+                    <option value="CS">Computer Science &amp; IT</option>
+
+                    <optgroup label="BBA"></optgroup>
+                    <option value="Mkt">Marketing</option>
+                    <option value="HR">Human Resources</option>
+
+                    <optgroup label="BCOM"></optgroup>
+                    <option value="Acc">Accountancy</option>
+                    <option value="Fin">Finance</option>
+                </select><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">reset</button>
+
+            </fieldset>
+    </center>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        /* img {
+            height: 300px;
+            width: 300px;
+            transform: translate3d(700px, 170px, 200px);
+        }
+
+        img:hover {
+            transition: 2s all ease-in-out;
+            width: 400px;
+            height: 400px;
+            border: 15px solid red;
+            image-rendering: crisp-edges;
+        } */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            padding: 50px;
+            width: 400px;
+            height: 400px;
+            transition: transform .2s;
+            margin: 0 auto;
+            margin-left: 30%;
+            margin-top: 10%;
+        }
+
+        img:hover {
+            transform: scale(1.9);
+            transform: scale(1.9);
+            transform: scale(1.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="zoom">
+        <img src="iron man.png" alt="">
+    </div>
+</body>
+
+</html>

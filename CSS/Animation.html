@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        .main {
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+        }
+
+
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            color: #fff;
+            text-align: center;
+            /* animation-name: width;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out; */
+            animation: width 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes width {
+            from {
+                width: 100px;
+                height: 100px;
+            }
+
+            to {
+                width: 300px;
+                height: 300px;
+                opacity: .5;
+            }
+        }
+
+        img {
+            animation: width 1s ease-in-out infinite alternate;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="main">
+        <!-- <div class="box"></div> -->
+        <img src="bmw-logo-679.png" height="300px">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        .load {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            border: 15px solid red;
+            border-top: 15px solid goldenrod;
+            animation: load 2s infinite;
+        }
+        div:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes load {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="load"></div>
+</body>
+
+</html>

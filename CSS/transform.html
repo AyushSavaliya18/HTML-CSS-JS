@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        .rotate {
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: goldenrod;
+            border: 2px solid red;
+            margin-top: 10%;
+            margin-left: 10%;
+        }
+
+        .rotate:hover {
+            text-align: center;
+            font-family: 'Segoe UI';
+            background-color: red;
+            border: 5px solid goldenrod;
+            color: white;
+            transform: rotate(360deg);
+            transition: 1s all ease-in;
+            border-radius: 50%;
+
+        }
+
+        .scale {
+            width: 200px;
+            display: inline-block;
+            height: 200px;
+            background-color: gray;
+            border: 2px solid black;
+            transform: translateX(80%);
+
+        }
+
+        .scale:hover {
+            /* transform: scaleX(2); */
+            /* transform:scale3d(2,2,2); */
+            transform: rotate(50deg);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            padding: 50px;
+            width: 400px;
+            height: 400px;
+            transition: transform .2s;
+            margin: 0 auto;
+            margin-left: 30%;
+            margin-top: 10%;
+        }
+
+        img:hover {
+            transform: scale(1.9);
+            transform: scale(1.9);
+            transform: scale(1.9);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rotate">Rotate</div>
+    <br><br><br><br><br><br><br>
+    <div class="scale">ayush </div>
+    <img src="iron man.png" alt="">
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="bmw-logo-679.png" type="icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            display: inline-flex;
+            justify-content: end;
+            width: 100%;
+            background-color: #000;
+            height: 50px;
+        }
+
+        a {
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: larger;
+            color: gray;
+            margin-left: 25px;
+            padding: 5px 15px 0 0;
+        }
+
+        i {
+            position: absolute;
+            top: 23px;
+            left: 6px;
+        }
+
+        #drop.hover {
+            background-color: black;
+        }
+
+        select {
+            width: 100px;
+            background-color: gray;
+            border-radius: 10px;
+            height: 30px;
+        }
+
+        a:hover{
+            color: white;
+            background-color: gray;
+            border-radius: 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
+        <div class="nav">
+            <a href="#" target="_blank">home</a>
+            <a href="#" target="_blank">about</a>
+            <a href="#" id="drop">contact
+                <select name="contact" id="">
+                    <option value="">Select contact detils</option>
+                    <option value="phno">Phone number : 9087900990</option>
+                    <option value="email">Email : ayushsavaliya1111@gmail.com</option>
+                </select>
+            </a>
+            <a href="#" target="_blank">login</a>
+            <a href="#" target="_blank">Sign up</a>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .div {
+        height: 200px;
+        width: 200px;
+        border: 2px solid red;
+        background-color: red;
+        position: relative;
+        animation: animate 5s ease-in-out infinite;
+        text-align: center;
+        animation-direction: alternate;
+    }
+
+    @keyframes animate {
+        0% {
+            background-color: #fff;
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            background-color: yellow;
+            left: 300px;
+            top: 0px;
+        }
+
+        50% {
+            background-color: green;
+            left: 300px;
+            top: 300px;
+        }
+
+        75% {
+            background-color: blue;
+            top: 300px;
+            left: 0px;
+        }
+
+        100% {
+            background-color: gray;
+            left: 0px;
+            top: 0px;
+        }
+    }
+</style>
+
+<body>
+    <div class="div">Ayush</div>
+</body>
+
+</html>
